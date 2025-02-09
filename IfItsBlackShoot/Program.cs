@@ -15,6 +15,13 @@ namespace IfItsBlackShoot
             Console.WriteLine(Targil5(869419));
             Console.Read();
         }
+        static int targil7(int[] arr, int n, int l)
+        {
+            if (l == -1) return -1;
+            if (n == arr[l]) return l;
+            else return targil7(arr, n, l - 1);
+
+        }
         static int Targil6(int[] a, int l)
         {
             if (l == -1) return 0;
